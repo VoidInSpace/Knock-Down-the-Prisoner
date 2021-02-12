@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public GameObject hitEffect;
     
     void Update()
     {
@@ -14,10 +15,14 @@ public class Bullet : MonoBehaviour
     {
         if (col.gameObject.tag == "PlayerBullet" || col.gameObject.tag == "EnemyBullet")
         {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.65f);
             Destroy(gameObject);
         }
         if (col.gameObject.tag != "Wall" && col.gameObject.name != "Player" && col.gameObject.name != "Bot")
         {
+            GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 0.65f);
             Destroy(gameObject);
         }
     }

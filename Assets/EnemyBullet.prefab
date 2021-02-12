@@ -157,5 +157,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682ace9f285dc4b4594c6f058b2c6eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerBullet: {fileID: 0}
-  EnemyBullet: {fileID: 7985526964073144342}
+  hitEffect: {fileID: 1190346716345747961, guid: 478ca0e09a0211d43a19b26b14664c46,
+    type: 3}
