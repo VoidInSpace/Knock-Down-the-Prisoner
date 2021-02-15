@@ -13,7 +13,7 @@ public class PlayerCan : MonoBehaviour
     }
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -12.5f, -11.17f),Mathf.Clamp(transform.position.y, -3.5f, 3.5f), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -19.5f, -18.5f),Mathf.Clamp(transform.position.y, -5f, 5f), transform.position.z);
 
     }
 }

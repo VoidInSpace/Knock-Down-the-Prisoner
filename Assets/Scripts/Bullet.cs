@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour
             Destroy(effect, 0.65f);
             Destroy(gameObject);
         }
-        if (col.gameObject.tag != "Wall" && col.gameObject.name != "Player" && col.gameObject.name != "Bot")
+        if (col.gameObject.tag != "Wall")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(effect, 0.65f);
