@@ -9,7 +9,7 @@ public class EnemyBot : MonoBehaviour
     public float turnSpeed = 2.0f;
     float targetAngle;
     Vector3 currentPos;
-    bool play=true;
+    bool play = true;
     Vector3 direction;
     void Start()
     {
@@ -34,8 +34,8 @@ public class EnemyBot : MonoBehaviour
         }    
         Vector3 target = dir * moveSpeed + currentPos;  //calculating target position
         transform.position = Vector3.Lerp (currentPos, target, Time.deltaTime);//movement from current position to target position
-         targetAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 1; //angle of rotation of gameobject
-        transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.Euler (0, 0, targetAngle), turnSpeed * Time.deltaTime); //rotation from current direction to target direction
+        /* targetAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 1; //angle of rotation of gameobject
+        transform.rotation = Quaternion.Slerp (transform.rotation, Quaternion.Euler (0, 0, targetAngle), turnSpeed * Time.deltaTime); */ //rotation from current direction to target direction
     }
     void OnCollisionEnter2D()
     {

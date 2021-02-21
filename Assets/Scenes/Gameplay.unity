@@ -2735,7 +2735,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -6454,9 +6454,9 @@ GameObject:
   - component: {fileID: 1178842425}
   - component: {fileID: 1178842429}
   - component: {fileID: 1178842430}
-  - component: {fileID: 1178842427}
   - component: {fileID: 1178842432}
   - component: {fileID: 1178842428}
+  - component: {fileID: 1178842427}
   - component: {fileID: 1178842431}
   m_Layer: 12
   m_Name: Bot
@@ -6540,13 +6540,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1178842424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dca1219c541e1240a9bcdee914c549b, type: 3}
+  m_Script: {fileID: 11500000, guid: b9031c795aefe1d44a129ed7366a33d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 854490261}
-  bulletPrefab: {fileID: 7985526964073144342, guid: 7ced822b4bc70df48a3e518343e8c089,
-    type: 3}
-  bulletForce: 20
+  moveSpeed: 5
+  dir: {x: 0, y: 0, z: 0}
+  turnSpeed: 2
 --- !u!114 &1178842428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6556,12 +6555,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1178842424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 495941a516e3c2c4d82c0820a2943d39, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dca1219c541e1240a9bcdee914c549b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rb: {fileID: 1178842429}
-  cam: {fileID: 638767188}
+  firePoint: {fileID: 854490261}
+  bulletPrefab: {fileID: 7985526964073144342, guid: 7ced822b4bc70df48a3e518343e8c089,
+    type: 3}
+  layers:
+    serializedVersion: 2
+    m_Bits: 8704
+  bulletForce: 20
+  radius: 22.9
+  fireRate: 0
+  nextFire: 0
 --- !u!50 &1178842429
 Rigidbody2D:
   serializedVersion: 4
@@ -6579,7 +6585,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
