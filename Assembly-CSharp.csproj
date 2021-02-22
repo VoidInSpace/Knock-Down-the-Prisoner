@@ -36,6 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\PauseSystem.cs" />
+     <Compile Include="Assets\SceneTransition.cs" />
      <Compile Include="Assets\Scripts\BotBoundary.cs" />
      <Compile Include="Assets\Scripts\BotDestroyZone.cs" />
      <Compile Include="Assets\Scripts\BotMovement.cs" />

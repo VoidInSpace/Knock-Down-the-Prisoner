@@ -6,16 +6,23 @@ using TMPro;
 
 public class GameOver : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI countdownText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject GameOverUI;
+    public GameObject playerBullet, enemyBullet;
 
     // Update is called once per frame
     void Update()
     {
-        countdownText.text = "You Lose!";
+        if (GameOverUI.activeInHierarchy)
+        {
+            Time.timeScale = 0f;
+            playerBullet.SetActive(false);
+            enemyBullet.SetActive(false);
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            playerBullet.SetActive(true);
+            enemyBullet.SetActive(true);
+        }
     }
 }
