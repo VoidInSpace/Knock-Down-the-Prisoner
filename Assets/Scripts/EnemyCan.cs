@@ -18,7 +18,7 @@ public class EnemyCan : MonoBehaviour
 
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, 18.5f, 19.5f),Mathf.Clamp(transform.position.y, -5f, 5f), transform.position.z);
+        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, 18.5f, 19.5f),Mathf.Clamp(transform.position.y, -5f, 5f), transform.position.z);
     }
 
     private IEnumerator DelayClose()

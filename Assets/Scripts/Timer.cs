@@ -7,7 +7,8 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     float currentTime = 0f;
-    float startingTime = 120f;
+    float startingTime = 10f;
+    public GameObject gameOverUI;
 
     [SerializeField] TextMeshProUGUI countdownText;
 
@@ -20,8 +21,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        while(currentTime != 0)
+        if(currentTime >= 0)
         {
             currentTime -= 1 * Time.deltaTime;
             int seconds = (int)(currentTime % 60);
@@ -30,10 +30,10 @@ public class Timer : MonoBehaviour
             string TimerString = string.Format("{0:00}:{1:00}", minutes,seconds);
             countdownText.text = "Time: \n" + TimerString;
         }
-        if(currentTime == 0)
+        else
         {
-            Debug.Log("Game Over");
+            Time.timeScale = 0f;
+            gameOverUI.SetActive(true);
         }
-        */
     }
 }
