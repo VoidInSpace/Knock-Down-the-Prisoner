@@ -771,7 +771,7 @@ MonoBehaviour:
     m_Bits: 8704
   bulletForce: 25
   radius: 22.9
-  fireRate: 0
+  fireRate: 2
   nextFire: 0
 --- !u!114 &72697768
 MonoBehaviour:
@@ -2756,6 +2756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4069e0969e6c6e6438c9c635d5af56a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingTime: 25
   gameOverUI: {fileID: 0}
   countdownText: {fileID: 1062530816}
 --- !u!114 &762761371
@@ -7102,6 +7103,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4920139846062428008, guid: b3913f10481148c40b79eef3168fd383,
     type: 3}
   bulletForce: 15
+  fireRate: 0
+  nextFire: 0
 --- !u!114 &1415457920
 MonoBehaviour:
   m_ObjectHideFlags: 0

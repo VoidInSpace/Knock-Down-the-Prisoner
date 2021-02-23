@@ -11,15 +11,15 @@ public class BotShooting : MonoBehaviour
 
     public float bulletForce = 20f;
     public float radius = 3f;
-    public float fireRate;
+    public float fireRate = 1f;
     public float nextFire;
 
     // Start is called before the first frame update
-    void Start()
+    /* void Start()
     {
-        fireRate = 1f;
+        fireRate;
         nextFire = Time.time;
-    }
+    } */
 
     // Update is called once per frame
     void Update()
