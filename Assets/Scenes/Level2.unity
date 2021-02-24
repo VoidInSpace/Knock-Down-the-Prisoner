@@ -5070,13 +5070,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\nBasic Controls:\r\n\r\nMovement\r\n- WSAD/Directional Arrows\r\n\r\nAim\r\n-
-    Mouse Cursor\r\n\r\nAttack\r\n- Mouse Right Click\r\n\r\nTo win:\r\n-Knock down
-    the enemy\u2019s \u201Ccan\u201D. \r\n\uF0A7- There will be a time limit.\r\n\uF0A7-
-    There will be variations on the can\u2019s life, \r\nboth the enemy and yours.\r\n\nYou\u2019ll
-    lose:\r\n - The enemy knocked down your \u201Ccan\u201D.\r\n- The enemy\u2019s
-    can haven\u2019t knocked down within the given time.\r\nRewards:\r\n- There will
-    be rewards for each level \r\n- It would be either a \u201Ccan\u201D or a \u201Cslipper\u201D
-    with different styles.\n"
+    Mouse Cursor\r\n\r\nAttack\r\n- Mouse Right Click\r\n\r\nTo win:\r\n- Hit the
+    enemy's \"can\" more than the number of times the enemy hit your \"can\" within
+    the time limit.\n\nYou\u2019ll lose:\r\n - The enemy hit your can more than the
+    number of times you hit its \"can\" until the timer stops.\n\nRewards:\r\n- There
+    will be rewards for each level \r\n- It would be either a \u201Ccan\u201D or
+    a \u201Cslipper\u201D with different styles.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c61d32f4245cc204eaac865133509ae6, type: 2}
   m_sharedMaterial: {fileID: -5128130556735664330, guid: c61d32f4245cc204eaac865133509ae6,
@@ -8034,7 +8033,7 @@ MonoBehaviour:
   - {fileID: 11014588}
   fullStar: {fileID: 21300000, guid: 7864ee21b63a0af48a36b9c6718e155c, type: 3}
   emptyStar: {fileID: 21300000, guid: ba6167341e6b22d448daa77e4596a033, type: 3}
-  gameOverText: {fileID: 893847668}
+  gameOverText: {fileID: 222458446}
 --- !u!114 &1579797821
 MonoBehaviour:
   m_ObjectHideFlags: 0
