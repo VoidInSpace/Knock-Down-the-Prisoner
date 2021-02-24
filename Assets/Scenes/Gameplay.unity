@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 53039539}
   - component: {fileID: 53039538}
   - component: {fileID: 53039537}
+  - component: {fileID: 53039540}
   m_Layer: 5
   m_Name: pauseButton
   m_TagString: Untagged
@@ -584,6 +585,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &53039540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53039532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10083309af13a754abe6ea8dc2487e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerBullet: {fileID: 4920139846062428008, guid: b3913f10481148c40b79eef3168fd383,
+    type: 3}
+  enemyBullet: {fileID: 7985526964073144342, guid: 7ced822b4bc70df48a3e518343e8c089,
+    type: 3}
 --- !u!1 &65584603
 GameObject:
   m_ObjectHideFlags: 0
