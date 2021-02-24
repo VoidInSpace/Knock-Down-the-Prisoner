@@ -1069,7 +1069,7 @@ MonoBehaviour:
   - {fileID: 1147398501}
   fullStar: {fileID: 21300000, guid: 7864ee21b63a0af48a36b9c6718e155c, type: 3}
   emptyStar: {fileID: 21300000, guid: ba6167341e6b22d448daa77e4596a033, type: 3}
-  gameOverText: {fileID: 0}
+  gameOverText: {fileID: 827841638}
 --- !u!1 &93195619
 GameObject:
   m_ObjectHideFlags: 0
@@ -6652,7 +6652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9031c795aefe1d44a129ed7366a33d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   dir: {x: 0, y: 0, z: 0}
   turnSpeed: 2
 --- !u!114 &1178842428
@@ -10116,7 +10116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameLevel: 1
-  nextButton: {fileID: 0}
+  nextButton: {fileID: 65584603}
 --- !u!114 &2127790957
 MonoBehaviour:
   m_ObjectHideFlags: 0

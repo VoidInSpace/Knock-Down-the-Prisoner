@@ -8,6 +8,6 @@ public class BotBoundary : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, 3f, 13.5f),Mathf.Clamp(transform.position.y, -3.5f, 3.5f), transform.position.z);
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, 3f, 11f),Mathf.Clamp(transform.position.y, -3.5f, 3.5f), transform.position.z);
     }
 }

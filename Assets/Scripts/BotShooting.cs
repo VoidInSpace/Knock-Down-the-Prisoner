@@ -15,11 +15,10 @@ public class BotShooting : MonoBehaviour
     public float nextFire;
 
     // Start is called before the first frame update
-    /* void Start()
+    void Start()
     {
-        fireRate;
         nextFire = Time.time;
-    } */
+    } 
 
     // Update is called once per frame
     void Update()
@@ -62,7 +61,7 @@ public class BotShooting : MonoBehaviour
             Rigidbody2D rb = enemyBullet.GetComponent<Rigidbody2D>();
             rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 
-            nextFire = Time.time + fireRate;
+            nextFire = Time.time + fireRate / 5;
         }
     }
     
