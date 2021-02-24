@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public Sprite fullStar;
     public Sprite emptyStar;
 
-    [SerializeField] TextMeshProUGUI countdownText;
+    [SerializeField] TextMeshProUGUI gameOverText;
 
 
     void Update()
@@ -25,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
         {
             gameOver.SetActive(true);
             nextButton.SetActive(false);
-            countdownText.text = "You Lose!";
+            gameOverText.text = "You Lose!";
         }
 
         if(health > numOfStars)

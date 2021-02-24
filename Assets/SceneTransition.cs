@@ -8,15 +8,6 @@ public class SceneTransition : MonoBehaviour
     public int GameLevel;
     public GameObject nextButton;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(GameLevel == 3)
-        {
-            nextButton.SetActive(false);
-        }
-    }
-
     public void PlayGame()
     {
         if(GameLevel == 1)
