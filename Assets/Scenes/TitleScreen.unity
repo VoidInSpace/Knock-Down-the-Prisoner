@@ -5441,7 +5441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481675427
@@ -6641,12 +6641,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: " Basic Controls:\r\n\r\nMovement\r\n- WSAD/Directional Arrows\r\n\r\nAim\r\n-
-    Mouse Cursor\r\n\r\nAttack\r\n- Mouse Right Click\r\n\r\nTo win:\r\n- Hit the
-    enemy's \"can\" more than the number of times the enemy hit your \"can\" within
-    the time limit.\n\nYou\u2019ll lose:\r\n - The enemy hit your can more than the
-    number of times you hit its \"can\" until the timer stops.\n\nRewards:\r\n- There
-    will be rewards for each level \r\n- It would be either a \u201Ccan\u201D or
-    a \u201Cslipper\u201D with different styles.\n"
+    Mouse Cursor\r\n\r\nAttack\r\n- Mouse Right Click\r\n\r\nGoal:\n- As your \"can\"
+    and the enemy's \"can\" life points are equal, decrease the enemy's \"can\" life
+    points more than the number of times the enemy hit your \"can\".\n- As your \"can\"
+    life points decreases in each level, decrease the enemy's \"can\" life points
+    greater than your \"can\" life points.\n\nRewards:\r\n- There will be rewards
+    for each level \r\n- It would be either a \u201Ccan\u201D or a \u201Cslipper\u201D
+    with different styles.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c61d32f4245cc204eaac865133509ae6, type: 2}
   m_sharedMaterial: {fileID: -5128130556735664330, guid: c61d32f4245cc204eaac865133509ae6,

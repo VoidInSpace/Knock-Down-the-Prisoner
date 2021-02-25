@@ -668,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 24588326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0216, y: 3.858, z: 0}
-  m_LocalScale: {x: 5.9987726, y: 3.0339649, z: 1}
+  m_LocalScale: {x: 7.12, y: 3.0339649, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -731,12 +731,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\nBasic Controls:\r\n\r\nMovement\r\n- WSAD/Directional Arrows\r\n\r\nAim\r\n-
-    Mouse Cursor\r\n\r\nAttack\r\n- Mouse Right Click\r\n\r\nTo win:\r\n- Hit the
-    enemy's \"can\" more than the number of times the enemy hit your \"can\" within
-    the time limit.\n\nYou\u2019ll lose:\r\n - The enemy hit your can more than the
-    number of times you hit its \"can\" until the timer stops.\n\nRewards:\r\n- There
-    will be rewards for each level \r\n- It would be either a \u201Ccan\u201D or
-    a \u201Cslipper\u201D with different styles.\n"
+    Mouse Cursor\r\n\r\nAttack\r\n- Mouse Right Click\r\n\r\nGoal:\n- As your \"can\"
+    and the enemy's \"can\" life points are equal, decrease the enemy's \"can\" life
+    points more than the number of times the enemy hit your \"can\".\n- As your \"can\"
+    life points decreases in each level, decrease the enemy's \"can\" life points
+    greater than your \"can\" life points.\n\nRewards:\r\n- There will be rewards
+    for each level \r\n- It would be either a \u201Ccan\u201D or a \u201Cslipper\u201D
+    with different styles.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c61d32f4245cc204eaac865133509ae6, type: 2}
   m_sharedMaterial: {fileID: -5128130556735664330, guid: c61d32f4245cc204eaac865133509ae6,
@@ -872,7 +873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 81.5, y: 16.199997}
+  m_AnchoredPosition: {x: 81.5, y: 16.200012}
   m_SizeDelta: {x: 148.82921, y: 34.026947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96951144
@@ -1317,8 +1318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f3fbe07484d22b4ebd4a81d5b4104bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 6
-  numOfStars: 6
+  health: 2
+  numOfStars: 2
   gameOver: {fileID: 685232818}
   nextButton: {fileID: 11795461}
   stars:
@@ -1361,7 +1362,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.8666667, y: 1.0333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1430,7 +1431,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa8bd159c8a5bc64bb05b5be7df6f957, type: 3}
+  m_Sprite: {fileID: 5450171044874483375, guid: f9f3a58c066041345868c0a3742682d8,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1449,7 +1451,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194645919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.0354, y: 0, z: 0}
+  m_LocalPosition: {x: -13.9, y: 0, z: 0}
   m_LocalScale: {x: 1.1558536, y: 1.2650518, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2922,7 +2924,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.8666667, y: 1.0333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2991,7 +2993,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa8bd159c8a5bc64bb05b5be7df6f957, type: 3}
+  m_Sprite: {fileID: 5450171044874483375, guid: f9f3a58c066041345868c0a3742682d8,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3010,7 +3013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687478161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.0936, y: 0, z: 0}
+  m_LocalPosition: {x: 13.9, y: 0, z: 0}
   m_LocalScale: {x: 1.1558536, y: 1.2650518, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4667,7 +4670,7 @@ Transform:
   m_GameObject: {fileID: 927755045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0286, y: -3.95, z: 0}
-  m_LocalScale: {x: 5.9902325, y: 3.0450134, z: 1}
+  m_LocalScale: {x: 7.12, y: 3.0450134, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -5467,7 +5470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 86.6, y: -15.75}
+  m_AnchoredPosition: {x: 86.600006, y: -15.75}
   m_SizeDelta: {x: 155.72847, y: 30.990555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098516388
@@ -5848,7 +5851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4069e0969e6c6e6438c9c635d5af56a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingTime: 16
+  startingTime: 61
   gameOverUI: {fileID: 685232818}
   nextButton: {fileID: 11795461}
   PlayerCan: {fileID: 194645919}
@@ -9667,7 +9670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -85.6, y: -16.5}
+  m_AnchoredPosition: {x: -85.600006, y: -16.5}
   m_SizeDelta: {x: 155.5857, y: 30.990555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2056622106
@@ -10092,8 +10095,8 @@ SpriteRenderer:
   m_SortingLayerID: -1807360465
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0147ecff88f631f4588a59a47630ea53, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: fca50fde5e348de4ba2a42aacdec1ba0, type: 3}
+  m_Color: {r: 0.6509804, g: 0.6509804, b: 0.6509804, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10112,7 +10115,7 @@ Transform:
   m_GameObject: {fileID: 2120810173}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0296, y: -0.045, z: 0}
-  m_LocalScale: {x: 5.9947643, y: 3.7592244, z: 1}
+  m_LocalScale: {x: 7.12, y: 4.86, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
